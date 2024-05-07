@@ -12,15 +12,17 @@
     <link href="https://fonts.bunny.net/css?family=magra:400" rel="stylesheet" />
     @bukStyles
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/x-icon" href="{{ asset('images/favicon.ico') }}">
 
 </head>
 
 <body class="bg-teal-950">
-    <header class="bg-teal-800 py-4">
+    <header class="bg-teal-800 py-4 w-full">
         <div class="container mx-auto">
             <div class="flex items-center h-full ml-3">
-                <img src="{{ asset('images/pingu.jpg') }}" alt="" class="h-full max-h-[150px] px-6">
-                <div class="text-white m-3 text-4xl items-center">R32 Instalaciones y Climatizaciones</div>
+                <img src="{{ asset('images/logo.png') }}" alt="" class="h-full max-h-[80px] xl:max-h-[150px] px-6">
+                <div class=" text-white m-3 text-xl md:text-4xl items-center font-bold">R32 Instalaciones y
+                    Climatizaciones</div>
             </div>
         </div>
     </header>
@@ -69,7 +71,7 @@
                     data-carousel-prev>
                     <span
                         class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
-                        <svg class="w-5 h-5 text-white sm:w-6 sm:h-6" fill="none" stroke="currentColor"
+                        <svg class="w-5 h-5 text-black sm:w-6 sm:h-6" fill="none" stroke="currentColor"
                             viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
                             </path>
@@ -82,7 +84,7 @@
                     data-carousel-next>
                     <span
                         class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 0 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
-                        <svg class="w-5 h-5 text-white sm:w-6 sm:h-6" fill="none" stroke="currentColor"
+                        <svg class="w-5 h-5 text-black sm:w-6 sm:h-6" fill="none" stroke="currentColor"
                             viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
                             </path>
@@ -93,40 +95,44 @@
             </div>
         </div>
 
-        <div class="flex justify-center py-5 mx-5">
-            <div class="grid grid-cols-1 gap-x-40 sm:grid-cols-3">
+        <div class="flex justify-center mt-[5rem] mx-[10%]">
+            <div class="grid gap-x-40 grid-cols-1 md:grid-cols-3">
                 <div class="text-neutral-50 flex flex-col items-center">
-                    <div class="w-[150px]">{{ svg('fas-wind') }}</div>
-                    <p class="m-4 text-2xl text-center "> Venta e Intalación de Sistemas de Ventilación</p>
+                    <div class="w-[80px] xl:w-[130px]">{{ svg('fas-wind') }}</div>
+                    <p class="m-4 text-4xl font-medium text-center "> Venta e Intalación de Sistemas de Ventilación</p>
                 </div>
                 <div class="text-neutral-50 flex flex-col items-center">
-                    <div class="w-[150px] mt-3  ">{{ svg('fas-hammer') }}</div>
-                    <p class="m-4 text-2xl text-center"> Reparación de Aires Acondicionados</p>
+                    <div class="w-[80px] xl:w-[130px] mt-3  ">{{ svg('fas-hammer') }}</div>
+                    <p class="m-4 text-4xl font-medium text-center"> Reparación de Aires Acondicionados</p>
                 </div>
                 <div class="text-neutral-50 flex flex-col items-center">
-                    <div class="w-[150px]">{{ svg('mdi-hammer-wrench') }}</div>
-                    <p class="m-4 text-2xl text-center"> Mantenimiento de Aires Acondicionados</p>
+                    <div class="w-[80px] xl:w-[130px]">{{ svg('mdi-hammer-wrench') }}</div>
+                    <p class="m-4 text-4xl font-medium text-center"> Mantenimiento de Aires Acondicionados</p>
                 </div>
             </div>
         </div>
 
-
-    <footer class="bg-teal-800 py-4 text-white text-xl">
-    <div class="grid grid-cols-[2,auto] gap-x-4">
-        <div class="justify-self-start">© 2024 R32INSTALACIONES</div>
-        <div class="grid grid-cols-2 gap-x-4 justify-self-end">
-            <div class="flex items-center space-x-2">
-                <div class="w-[40px]">{{ svg('fab-whatsapp') }}</div>
-                <p>662 480 928</p>
+        <footer class="bg-teal-800 py-4 text-white text-xl">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div class="flex items-center space-x-2">
+                        <div class="w-8 h-12 mr-4">
+                            <div class="w-[40px]">{{ svg('fab-whatsapp') }}</div>
+                        </div>
+                        <p>662 480 928</p>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <div class="w-8 h-8 mr-4">
+                            <div class="w-[40px]">{{ svg('entypo-mail') }}</div>
+                        </div>
+                        <p>diegoc@r32instalaciones.com</p>
+                    </div>
+                    <div class="text-left xl:text-right mt-3">
+                        © 2024 R32INSTALACIONES
+                    </div>
+                </div>
             </div>
-            <div class="flex items-center space-x-2 mr-10">
-                <div class="w-[40px]">{{ svg('entypo-mail') }}</div>
-                <p>diegoc@r32instalaciones.com</p>
-            </div>
-        </div>
-    </div>
-</footer>
-
+        </footer>
 
 
         @bukScripts
