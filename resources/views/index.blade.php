@@ -19,11 +19,12 @@
 <body class="bg-teal-950">
     <header class="bg-teal-800 py-4 w-full">
         <div class="container mx-auto">
-            <div class="flex items-center h-full ml-3">
+            <div class="flex items-center ml-3">
                 <img src="{{ asset('images/logo.png') }}" alt="" class="h-full max-h-[80px] xl:max-h-[150px] px-6">
                 <div class=" text-white m-3 text-xl md:text-4xl items-center font-bold">R32 Instalaciones y
                     Climatizaciones</div>
             </div>
+            <div class="flex justify-end mr-3 font-bold text-white"> <a href="/">Sobre nosotros</a> </div>
         </div>
     </header>
 
